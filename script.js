@@ -59,7 +59,7 @@ document.querySelector(".tombol").addEventListener("click", function () {
                   }).then((e) => {
                     val = e.value;
                     Swal.fire(
-                      `Makasih ya udah sayang sama ${sender} ${val}%`
+                      `Makasih ya udah sayang ${val}% sama ${sender}`
                     ).then(function () {
                       Swal.fire({
                         title: `Sekarang ${nama} kangen ga sama ${sender}?`,
@@ -71,7 +71,7 @@ document.querySelector(".tombol").addEventListener("click", function () {
                         /* Read more about isConfirmed, isDenied below */
                         if (result.isConfirmed) {
                           Swal.fire(
-                            `Huhu iya ${sender} juga kangen ${nama} :((`
+                            `Huhu iya ${sender} juga kangen ${nama} :(`
                           ).then(function () {
                             Swal.fire("Terakhir deh sayang").then(function () {
                               Swal.fire(
